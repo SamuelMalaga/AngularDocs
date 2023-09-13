@@ -1,15 +1,35 @@
-<mat-toolbar color="primary">
-  <a class="title" href="/">{{ title }}</a>
+<div class="page-body">
 
-  <div class="toolbar-spacer"></div>
 
-  <a mat-button [routerLink]="['profile']">Profile</a>
+  <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+	  <nav class="uk-navbar-container">
+	    <div class="uk-container">
+	      <div data-uk-navbar>
+	        <div class="uk-navbar-left">
+	          <a class="uk-navbar-item uk-logo uk-visible@m" href="index.html">EloGroup | PowerUi</a>
 
-  <button mat-raised-button *ngIf="!loginDisplay" (click)="login()">Login</button>
-  <button mat-raised-button *ngIf="loginDisplay" (click)="logout()">Logout</button>
+	          <ul class="uk-navbar-nav uk-visible@m">
+	            <li >
+	              <a href="#"  *ngIf="!loginDisplay" (click)="login()">Acesse a Documentação</a>
+                <a href="#"  *ngIf="loginDisplay" (click)="logout()">Sair</a>
+	              <div class="uk-navbar-dropdown">
+	                <ul class="uk-nav uk-navbar-dropdown-nav">
+	                  <li><a href="changelog-timeline.html">Timeline Style</a></li>
+	                  <li><a href="changelog-posts.html">Post Style</a></li>
+	                </ul>
+	              </div>
+	            </li>
+	          </ul>
+	        </div>
+	      </div>
+	    </div>
+	  </nav>
+	</div>
 
-</mat-toolbar>
-<div class="container">
-  <!--This is to avoid reload during acquireTokenSilent() because of hidden iframe -->
-  <router-outlet *ngIf="!isIframe"></router-outlet>
+  <div class="container">
+    <!--This is to avoid reload during acquireTokenSilent() because of hidden iframe -->
+    <router-outlet *ngIf="!isIframe"></router-outlet>
+  </div>
 </div>
+<!-- <button mat-raised-button *ngIf="!loginDisplay" (click)="login()">Ver Documentação</button>
+  <button mat-raised-button *ngIf="loginDisplay" (click)="logout()">Logout</button> -->

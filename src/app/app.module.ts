@@ -47,7 +47,8 @@ const isIE =
 
             "https://login.microsoftonline.com/298ec275-be18-4a15-bb9c-ad62eceeb328",
 
-          redirectUri: "https://samuelmalaga.github.io/lorem-document/",
+          redirectUri: "https://samuelmalaga.github.io/AngularDocs/"
+          //"https://samuelmalaga.github.io/AngularDocs/",
 
         },
 
