@@ -2758,6 +2758,7 @@ select.uk-form-width-xsmall {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: rgba(25,45, 211, 1) ;
 }
 
 /* Phone landscape and bigger */
@@ -4814,6 +4815,7 @@ ul.uk-nav-sub {
   /* 1 */
   position: relative;
   font-weight: 500;
+  background-color:rgba(25,45, 211, 1) ;
 }
 
 .uk-navbar .uk-drop {
@@ -4836,7 +4838,8 @@ ul.uk-nav-sub {
 /* Container
  ========================================================================== */
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #fff;
+  background: rgba(25,45, 211, 1)
+  /* #fff; */
 }
 
 /*
@@ -4860,7 +4863,7 @@ ul.uk-nav-sub {
 .uk-navbar-center-right > * {
   display: flex;
   /* 1 */
-  align-items: center;
+  align-items: flex-end;
 }
 
 /*
@@ -9504,7 +9507,7 @@ iframe.uk-cover {
 .uk-logo {
   font-size: 1.5rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: #323247;
+  color: white;
   /* 1 */
   text-decoration: none;
   font-weight: 700;

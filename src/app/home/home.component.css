@@ -1,6 +1,4 @@
-/* .main-content{
-  background-color: aqua;
-  height: 400px;
+/*
 } */
 @charset "UTF-8";
 /* ========================================================================
@@ -88,6 +86,9 @@ html {
   color: #323247;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+}
+.main-content{
+  width: 100%;
 }
 
 /*

@@ -54,7 +54,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   logout() { // Add log out function here
     this.authService.logoutPopup({
-      mainWindowRedirectUri: "/"
+      mainWindowRedirectUri: "https://samuelmalaga.github.io/AngularDocs/"
     });
   }
 
